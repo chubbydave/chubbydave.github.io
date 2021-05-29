@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+h1, p, input, button {
+  color: rgb(144, 144, 144);
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+
+p {
+  display: inline;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#add-entry {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+#add-entry-input {
+  color:rgb(22, 22, 22);
+  font-weight: 700;
+  font-size: 32px;
+  padding-left: 20px;
+  background-color: rgb(144, 144, 144);
+  border: none;
+  outline: none;
+  display: inline;
+  height: 60px;
+  width: 100%;
+}
+
+#add-entry-submit {
+  background-color: rgb(144, 144, 144);
+  border: none;
+  border-radius: 0 20px 20px 0;
+  color: rgb(22, 22, 22);
+  float: right;
+  font-size: 32px;
+  height: 62px;
+  width: 62px;
+  font-weight: 700;
+}
+
+#add-entry-wrapper {
+  overflow: hidden;
+  padding-right: 24px;
+}
+
+.list-entry {
+  margin: 32px auto 16px;
+  width: 50vw;
+
+}
+
+.list-entry-check {
+  background-color: rgb(144, 144, 144);
+  color:rgb(22, 22, 22);
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  width: 28px;
+  height: 28px;
+  margin: auto 0;
+}
+
+.list-entry-text {
+  width: 100%;
+  margin-left: 8px;
+}
+
+.list-entry-remove {
+  background-color: transparent;
+  border: none;
+  color: rgb(144, 144, 144);
+  font-weight: 700;
+  float: right;
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+}
