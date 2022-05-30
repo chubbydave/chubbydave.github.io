@@ -8,7 +8,7 @@ body {
 }
 
 h1, div, buttons {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hr {
