@@ -97,7 +97,7 @@ if (typeof(Storage) !== "undefined") {
 
   // Initialise laps
   if (laps.length) {
-    for (i in laps) {
+    for (let i in laps) {
       const lastLap = i > 0 ? laps[i - 1] : 0;
       const lapTime = laps[i] - lastLap;
       const lapHTML = `<div class="lap"><span class="highlight">${parseInt(i) + 1}</span> ${formatMSToTime(lapTime)}<div class="lap">`;
