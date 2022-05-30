@@ -1,8 +1,8 @@
 // Image file paths
-const startImage = "/images/start.svg";
-const pauseImage = "/images/pause.svg";
-const resetImage = "/images/reset.svg";
-const lapImage = "/images/lap.svg";
+const startImage = "./images/start.svg";
+const pauseImage = "./images/pause.svg";
+const resetImage = "./images/reset.svg";
+const lapImage = "./images/lap.svg";
 
 // This function formats milliseconds (integer, #) to HH:MM:SS
 function formatMSToTime(t) {
