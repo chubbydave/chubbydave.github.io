@@ -1,3 +1,5 @@
+'use strict';
+
 // Image file paths
 const startImage = "./images/start.svg";
 const pauseImage = "./images/pause.svg";
@@ -17,6 +19,8 @@ function formatMSToTime(t) {
 
   return `${h.padStart(2, "0")}:${m.padStart(2, "0")}:${s.padStart(2, "0")}`;
 }
+
+console.log(JSON.parse(localStorage.getItem("timerRunning")) || false)
 
 // Check if the user has Web Storage
 if (typeof(Storage) !== "undefined") {
@@ -168,3 +172,4 @@ if (typeof(Storage) !== "undefined") {
 } else {
   console.error("Sorry, your browser does not support Web Storage");
 }
+
