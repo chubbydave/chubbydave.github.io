@@ -12,7 +12,14 @@ html[data-theme="dark"] {
 
 * {
   box-sizing: border-box;
+}
+
+textarea, div, button {
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
@@ -54,11 +61,13 @@ button, span, div {
 }
 
 .toolbar-text {
+  font-size: 14px;
   margin: auto 20px;
   color: var(--text-color);
 }
 
 #btn-theme {
+  font-size: 14px;
   color: var(--text-color);
   font-weight: 400;
   cursor: pointer;
