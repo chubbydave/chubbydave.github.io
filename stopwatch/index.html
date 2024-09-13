@@ -1,34 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.B9Th4WhR.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CrfgM_9R.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.TMbJGsg8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BGTSHx9J.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D8TfIIwt.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BtaNPvRV.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CgZJWbDl.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.CGBi4fnx.js"><title>Stopwatch</title><!-- HEAD_svelte-1kh3ruq_START --><!-- HEAD_svelte-1kh3ruq_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="flex justify-center items-center h-screen"><div class="text-[15vw] tabular-nums font-bold">00:00:00</div></div> 
+			
+			<script>
+				{
+					__sveltekit_12jyibc = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/stopwatch"
+					};
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+					const element = document.currentScript.parentElement;
 
-  <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
+					const data = [null,null];
 
-  <title>Stopwatch</title>
-</head>
-<body>
-  <div id="centre-container">
-    <div id="lap-text"></div>
-    <div id="bottom-container">
-      <div id="secondary-times">
-        <div id="timer-text"></div>
-        <div class="hr"></div>
-        <div id="laps-header">Laps</div>
-        <div id="laps"></div>
-      </div>
-      
-      <button id="btn-main"><img src="images/start.svg" alt="Start"></button>
-      <button id="btn-secondary"><img src="images/reset.svg" alt="Reset"></button>
-    </div>
-  </div>
-  <div id="author"></div>
-</body>
+					Promise.all([
+						import("./_app/immutable/entry/start.CrfgM_9R.js"),
+						import("./_app/immutable/entry/app.D8TfIIwt.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
