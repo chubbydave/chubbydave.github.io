@@ -1,35 +1,15 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/entry/start.D7IDqEE4.js">
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/chunks/entry.CPSCBnED.js">
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/chunks/scheduler.BvLojk_z.js">
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/chunks/index.BGTSHx9J.js">
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/entry/app.DtR27Ogu.js">
-		<link rel="modulepreload" href="/stopwatch/_app/immutable/chunks/index.BtaNPvRV.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-			<script>
-				{
-					__sveltekit_1384pjw = {
-						base: "/stopwatch",
-						assets: "/stopwatch"
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("/stopwatch/_app/immutable/entry/start.D7IDqEE4.js"),
-						import("/stopwatch/_app/immutable/entry/app.DtR27Ogu.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <script type="module" crossorigin src="https://chubbydave.github.io/stopwatch/assets/index-wyDbGu7b.js"></script>
+    <link rel="stylesheet" crossorigin href="https://chubbydave.github.io/stopwatch/assets/index-Bnpa4_9-.css">
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+        <div class="text-[15vw] tabular-nums font-bold text-gray-400" id="stopwatch"></div>
+    </div>
+  </body>
 </html>
